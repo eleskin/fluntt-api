@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="commit" />
+    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +159,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Http/Controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -198,7 +201,8 @@
       <workItem from="1614334726146" duration="12000" />
       <workItem from="1614366805882" duration="3729000" />
       <workItem from="1614409094840" duration="103000" />
-      <workItem from="1614409221820" duration="386000" />
+      <workItem from="1614409221820" duration="537000" />
+      <workItem from="1614425713965" duration="2446000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1613651775280</created>
