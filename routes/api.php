@@ -33,6 +33,7 @@ Route::group(['prefix' => 'auth'], function () {
 Route::group(['middleware' => 'auth:api'], function () {
     Route::group(['prefix' => 'operations'], function () {
         Route::get('/', [OperationsController::class, 'getOperations']);
-        Route::post('add', [OperationsController::class, 'addOperation']);
+        Route::post('/', [OperationsController::class, 'addOperation']);
+        Route::delete('/{id}', [OperationsController::class, 'deleteOperation']);
     });
 });
