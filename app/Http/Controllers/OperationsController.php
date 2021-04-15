@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Operation;
-use Illuminate\Database\Console\Migrations\ResetCommand;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -40,6 +39,26 @@ class OperationsController extends Controller
         return response()->json([
             'operation' => $operation
         ], 201);
+    }
+
+    public function editOperation(Request $request)
+    {
+        $id = $request->id;
+        $value = $request->value;
+        $category = $request->category;
+        $updated_at = $request->updated_at;
+
+        DB::table('operations')
+            ->where('id', $id)
+            ->update(['value' => $value, 'category' => $category, 'updated_at' => $updated_at]);
+
+        $operation = DB::table('operations')
+            ->where('id', $id)
+            ->first();
+
+        return response()->json([
+            'operation' => $operation
+        ], 200);
     }
 
     public function deleteOperation(Request $request)
