@@ -27,6 +27,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::group(['middleware' => 'auth:api'], function () {
         Route::get('logout', [AuthController::class, 'logout']);
         Route::get('user', [AuthController::class, 'user']);
+        Route::get('change-currency', [AuthController::class, 'changeCurrency']);
     });
 });
 

@@ -6,6 +6,7 @@ use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
@@ -34,7 +35,8 @@ class AuthController extends Controller
         $user = new User([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => bcrypt($request->password),
+            'currency' => 'usd'
         ]);
         $user->save();
         $tokenResult = $user->createToken('Personal Access Token');
@@ -116,5 +118,22 @@ class AuthController extends Controller
     public function user(Request $request)
     {
         return response()->json($request->user());
+    }
+
+    public function changeCurrency(Request $request) {
+        $id = $request->id;
+        $currency = $request->currency;
+
+        DB::table('users')
+            ->where('id', $id)
+            ->update(['currency' => $currency]);
+
+        $user = DB::table('operations')
+            ->where('id', $id)
+            ->first();
+
+        return response()->json([
+            'user' => $user
+        ], 200);
     }
 }
