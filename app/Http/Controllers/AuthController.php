@@ -48,6 +48,7 @@ class AuthController extends Controller
         return response()->json([
             'id' => $user->id,
             'name' => $user->name,
+            'currency' => $user->currency,
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse(
@@ -89,6 +90,7 @@ class AuthController extends Controller
         return response()->json([
             'id' => $user->id,
             'name' => $user->name,
+            'currency' => $user->currency,
             'access_token' => $tokenResult->accessToken,
             'token_type' => 'Bearer',
             'expires_at' => Carbon::parse(
@@ -121,15 +123,15 @@ class AuthController extends Controller
     }
 
     public function changeCurrency(Request $request) {
-        $id = $request->id;
+        $userId = $request->userId;
         $currency = $request->currency;
 
         DB::table('users')
-            ->where('id', $id)
+            ->where('id', $userId)
             ->update(['currency' => $currency]);
 
-        $user = DB::table('operations')
-            ->where('id', $id)
+        $user = DB::table('users')
+            ->where('id', $userId)
             ->first();
 
         return response()->json([

@@ -27,7 +27,7 @@ Route::group(['prefix' => 'auth'], function () {
     Route::group(['middleware' => 'auth:api'], function () {
         Route::get('logout', [AuthController::class, 'logout']);
         Route::get('user', [AuthController::class, 'user']);
-        Route::get('change-currency', [AuthController::class, 'changeCurrency']);
+        Route::patch('change-currency', [AuthController::class, 'changeCurrency']);
     });
 });
 
@@ -35,7 +35,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::group(['prefix' => 'operations'], function () {
         Route::get('/', [OperationsController::class, 'getOperations']);
         Route::post('/', [OperationsController::class, 'addOperation']);
-        Route::put('/{id}', [OperationsController::class, 'editOperation']);
+        Route::patch('/{id}', [OperationsController::class, 'editOperation']);
         Route::delete('/{id}', [OperationsController::class, 'deleteOperation']);
     });
 });
