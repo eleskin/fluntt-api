@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="add currency field">
+    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="add change currency">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OperationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OperationsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +33,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/AuthController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/app/Models/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/app/Http/Controllers/OperationsController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/app/Models/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/routes/api.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -249,7 +248,17 @@
       <workItem from="1625145432336" duration="743000" />
       <workItem from="1625148693349" duration="1179000" />
       <workItem from="1627399314690" duration="614000" />
-      <workItem from="1627463699833" duration="5494000" />
+      <workItem from="1627463699833" duration="5525000" />
+      <workItem from="1627570017674" duration="646000" />
+      <workItem from="1627572072240" duration="133000" />
+      <workItem from="1627667468184" duration="641000" />
+      <workItem from="1627763178631" duration="130000" />
+      <workItem from="1627806185177" duration="177000" />
+      <workItem from="1627917296159" duration="298000" />
+      <workItem from="1627922325889" duration="611000" />
+      <workItem from="1628019263384" duration="603000" />
+      <workItem from="1628616578258" duration="613000" />
+      <workItem from="1628623934111" duration="2049000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1613651775280</created>
@@ -335,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625149871504</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add change currency">
+      <created>1627483456825</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1627483456825</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,6 +375,7 @@
     </ignored-roots>
     <MESSAGE value="commit" />
     <MESSAGE value="add currency field" />
-    <option name="LAST_COMMIT_MESSAGE" value="add currency field" />
+    <MESSAGE value="add change currency" />
+    <option name="LAST_COMMIT_MESSAGE" value="add change currency" />
   </component>
 </project>

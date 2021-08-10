@@ -29,6 +29,8 @@ class OperationsController extends Controller
         $operation->category = $request->category;
         $operation->type = $request->type;
         $operation->userId = $request->userId;
+        $operation->created_at = $request->created_at;
+        $operation->updated_at = $request->updated_at;
         $operation->save();
 
         $operation = DB::table('operations')
