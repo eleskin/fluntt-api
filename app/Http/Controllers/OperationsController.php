@@ -49,10 +49,11 @@ class OperationsController extends Controller
         $value = $request->value;
         $category = $request->category;
         $updated_at = $request->updated_at;
+        $type = $request->type;
 
         DB::table('operations')
             ->where('id', $id)
-            ->update(['value' => $value, 'category' => $category, 'updated_at' => $updated_at]);
+            ->update(['value' => $value, 'category' => $category, 'updated_at' => $updated_at, 'type' => $type]);
 
         $operation = DB::table('operations')
             ->where('id', $id)
