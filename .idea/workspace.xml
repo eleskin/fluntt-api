@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="add date editor">
+    <list default="true" id="2786ec53-a198-41aa-900e-b8d1c4f62e4f" name="Default Changelist" comment="feat: add select for operation type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OperationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OperationsController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -260,7 +259,9 @@
       <workItem from="1628616578258" duration="613000" />
       <workItem from="1628623934111" duration="2075000" />
       <workItem from="1628793579215" duration="1063000" />
-      <workItem from="1628873533107" duration="1326000" />
+      <workItem from="1628873533107" duration="3127000" />
+      <workItem from="1628958105147" duration="48000" />
+      <workItem from="1628959225668" duration="613000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1613651775280</created>
@@ -360,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628627341787</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="feat: add select for operation type">
+      <created>1628876135876</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628876135876</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +394,7 @@
     <MESSAGE value="add currency field" />
     <MESSAGE value="add change currency" />
     <MESSAGE value="add date editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="add date editor" />
+    <MESSAGE value="feat: add select for operation type" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add select for operation type" />
   </component>
 </project>

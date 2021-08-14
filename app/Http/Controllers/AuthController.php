@@ -36,7 +36,7 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
-            'currency' => 'usd'
+            'currency' => 'Dollar'
         ]);
         $user->save();
         $tokenResult = $user->createToken('Personal Access Token');
